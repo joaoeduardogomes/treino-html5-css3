@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes. Ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--O PEQUENO TEM QUE SER ACIMA DO MÉDIO. A ORDEM IMPORTA! TEM QUE SER A IMAGEM MAIOR EMBAIXO NA TAG IMG E NA ORDEM DECRESCENTE ATÉ A MENOR NA TAG SOURCE-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto grande">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1> <!--UM MODO DE USAR ÁUDIO-->
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/two-moons-bobby-richards.mp3" controls autoplay></audio>
+    <!--USAR ARQUIVOS MP3, WAV OU OGG POR QUESTÕES DE COMPATIBILIDADE-->
+
+    <audio preload="metadata" controls autoplay loop> <!--OUTRO MODO DE USAR ÁUDIO-->
+        <source src="midia/muriel-bobby-richards.mp3" type="audio/mpeg">
+        <source src="midia/muriel-bobby-richards.mp3" type="audio/ogg">
+        <source src="midia/muriel-bobby-richards.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="midia/muriel-bobby-richards.mp3">Clique aqui para baixar o arquivo MP3</a>.</p>
+    </audio>
+</body>
+</html>

@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+body {background-color: dimgray; text-align: center;}
+h1 {color: whitesmoke; text-decoration: underline; text-align: center; font-family: Verdana;}
+p {color: aliceblue; text-align: center; font-family: Geneva; font-size: 20px;}
+a {color: aliceblue;}

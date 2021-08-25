@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body {
+    background-color: beige;
+}
+
+h1 {
+    color: teal;
+}
+
+/* o que em HTML é "id" = em CSS é "#" 
+    o que em HTML é "class" = em CSS é "."
+*/
+
+h1#principal {         /* TAMBÉM É POSSÍVEL DEIXAR APENAS A ID "#principal". Só se pode usar um "id" num documento!! */
+    text-align: center;
+    background-color: teal;
+    color: azure;
+}
+
+h2 {
+    color: steelblue;
+}
+
+.basico { /* ESSES TRÊS ELEMENTOS SEGUINTES SÃO AS CLASSES USADAS NOS H2. Também é pos´sivel usar a class base pra outros elementos além desses títulos. */
+    color: tan;
+}
+
+.intermediario {
+    color: slateblue;
+}
+
+.avancado {
+    color: saddlebrown;
+}
+
+.destaque {
+    background-color: rgba(247, 116, 23, 0.692);
+}

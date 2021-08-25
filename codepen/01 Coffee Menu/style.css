@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Marck+Script&display=swap");
+
+:root {
+	--color0: #8c4830;
+	--color1: #593a27;
+	--color2: #a66226;
+	--color3: #d99f59;
+	--color4: #f2daac;
+
+	--title-font: "Marck Script", cursive;
+	--body-font: "Mali", sans-serif;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+	background-image: radial-gradient(var(--color2), var(--color1));
+	color: #fff;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+body {
+	font-family: var(--body-font);
+	font-weight: 500;
+	background-color: var(--color4);
+}
+
+main {
+	min-width: 320px;
+	max-width: 800px;
+	margin: auto;
+	margin-bottom: 50px;
+	display: block;
+	background-color: var(--color1);
+	padding: 0px 40px 40px 40px;
+	color: #fff;
+}
+
+main img {
+	display: grid;
+	min-width: 150px;
+	max-width: 50%;
+	border: 5px solid var(--color2);
+	border-radius: 10px;
+	margin: auto;
+}
+
+img.mainimg {
+	min-width: 100%;
+	border: 5px;
+	border-radius: 0px;
+}
+
+aside {
+	margin-left: 40px;
+	color: white;
+	display: block;
+	text-align: center;
+	
+}
+
+footer {
+	background-color: var(--color2);
+	margin: auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+	color: var(--color4);
+	display: block;
+}
+
+h1#header {
+	padding-top: 30px;
+	padding-bottom: 10px;
+	font-family: var(--title-font);
+	font-size: 3em;
+}
+
+h2 {
+	font-weight: bold;
+	color: var(--color4);
+}
+
+h2.type {
+	text-align: left;
+}
+
+p#extra {
+	font-size: 0.75em;
+	color: #d9d2cc;
+}
+
+span.note {
+	font-size: 0.75em;
+	color: #d9d2cc;
+}
+
+div.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	place-items: center;
+	margin: auto;
+	gap: 1em;
+	flex-direction: column;
+}
+
+div.box {
+	margin: 10px;
+}
+
+span.name {
+	color: var(--color4);
+}
+
+span.price {
+	font-size: 1.5em;
+	font-weight: 700;
+	color: var(--color3);
+}
+
+dt.product {
+	color: #a4bfb0;
+}
+
+p {
+	font-size: 12px;
+}
+
+.big {
+	width: 100%;
+}

@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+* {font-family: Segoe UI;}
+body {background-image: linear-gradient(to bottom, #A8835B, #E6D7C6); background-attachment: fixed;}
+main {background-color: white; border-radius: 20px; box-shadow: 5px 5px 15px #131C2D;width: 600px; padding: 10px; margin: auto;}
+h1 {color: #3A571B; text-align: center; text-shadow: 1px 1px 2px #131C2D;}
+h2 {color: #304056;}
+p {text-align: justify;} 

@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('../fontes/idroid.otf')  format('opentype');
+    font-weight: normal;
+}
+
+:root { /*É possível criar variáveis aqui dentro*/
+    --cor0: #c5ebd6;
+    --cor1: #84e1ad;
+    --cor2: #39cd7c;
+    --cor3: #2fa866;
+    --cor4: #1a5c38;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'idroid', cursive;
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor4), var(--cor2));
+    margin-top: -35px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    font-weight: normal;
+    background-color: var(--cor1);
+}
+
+h1#cabecalho {
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: 200;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: #fafcfb;
+    background-image: none;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+}
+
+#abertura {
+    font-family: var(--fonte-);
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 90px;
+    color: #fafcfb;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+    margin-bottom: 0px;
+    max-width: 380px;
+    margin: auto;
+}
+
+aside {
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside h3 {
+    background-color: var(--cor3);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0 -10px;
+    border-radius: 10px 10px 0 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img.responsiva {
+    width: 100%;
+}
+
+div.video {
+    background-color: var(--cor4);
+    margin: 0 -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%; /*o normal é 59%*/
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+    margin: auto;
+    background-attachment: fixed;
+    margin-bottom: -60px;
+    margin-left: -8px;
+    margin-right: -8px;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+p#rodape {
+    margin: 0px;
+}
+
+h1.normal {
+    font-family: 'idroid';
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--cor4);
+    text-shadow: 2px 2px 5px rgba(139, 137, 137, 0.541);
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, #c5ebd6, transparent);
+    color: var(--cor4);
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px; /*Isto faz o recuo dno início do parágrafo*/
+    line-height: 1.8em;
+    font-size: 1.1em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+    background-color: var(--cor1);
+    padding: 2px 8px;
+}
+
+nav {
+    background-color: var(--cor4);
+    padding-bottom: 16px;
+    padding-top: 3px;
+    padding-left: 10px;
+    color: #fafcfb;
+    margin-left: -8px;
+    margin-right: -8px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192)
+}
+
+a.menu {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+nav a:hover {
+    background-color: var(--cor2);
+    color: var(--cor4);
+    border: solid 3px rgba(0, 0, 0, 0.384);
+    border-radius: 100px;
+}
+
+main {
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 0px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    text-align: justify;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+}
+
+main img {
+    width: 100%; /*Com esta configuração, imagens muito pequenas ficam esticadas e desfocadas*/
+}
+
+main img.pequena {
+    max-width: 300px;
+        /*ou:*/
+        /*width: 50%; (Isto resolve o problema de imagens muito pequenas desfocadas)*/
+
+    display: block; /*(Transformando em bloco, é possível usar a margem auto pra centralizar)*/
+
+    margin: auto;
+}
+
+
+
+main a:hover {
+    text-decoration: underline;
+}
+
+a.menu:visited {
+    color: #fafcfb;
+}
+
+a.link {
+    color: var(--cor4);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.link::after {
+    content: '🔗';
+}
+
+.bugdroid {
+    display: block;
+    margin: auto;
+}
+
+ul {
+    list-style-type: '\2714\0020\0020'; /*Este é um código pros ícones da lista. O "2714" é o check, e os "0020" são espaços pra não ficar muito colado*/
+    columns: 2;
+    list-style-position: inside; /*Faz os marcadores da lista ficarem dentro da divisão*/
+}
